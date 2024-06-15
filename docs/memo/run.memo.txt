@@ -1,0 +1,5 @@
+docker run -it --rm -p 4000:4000 -v $(pwd):/srv/jekyll jekyll/jekyll:latest /bin/bash
+
+gem install webrick
+jekyll server . --watch --host 0.0.0.0
+
